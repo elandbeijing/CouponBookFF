@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  FormularLib
+
+  Created by 인식 조 on 12. 11. 14..
+  Copyright (c) 2012년 장재휴. All rights reserved.
+*/
+"NOTIFICATION_TITLE" = "Notification";
+
+"SETTING_HELP" = "Help";
+"SETTING_APPNAME" = "AppName";
+"SETTING_APPVERSION" = "AppVersion";
+"SETTING_TITLE" = "Settings";
+"SETTING_FRAMEWORK" = "Framework";
+"SETTING_LOCK" = "App Locking";
+"SETTING_ON" = "On";
+"SETTING_OFF" = "Off";
+"SETTING_FAVORITE" = "Favorite";
+"SETTING_CLEAR_CACHE" = "Clear Cache";
+"SETTING_CLEAR_CACHE_COMPLETE" = "Remove all cache";
+
+"HELP_NAVIGATION_TITLE" = "Help";
+
+"SHELL_CAMERA" = "Camera";
+"SHELL_PHOTOALBUM" = "PhotoAlbum";
+"SHELL_LOGOUT" = "Logout";
+"SHELL_LOGOUT_MESSAGE" = "Are you sure you want to logout?";
+"SHELL_LOGOUT_ERROR" = "An error occurred in logout";
+"SHELL_PHOTO_SAVE" = "Photo saved";
+"SHELL_PHOTO_SAVE_ERROR" = "Photo save error";
+"SHELL_EXIT_MESSAGE" = "Exit Application?";
+
+"INIT_CONFIGURATION_ERROR" = "An error has occurred during the configuration process";
+"INIT_LOGIN_FAIL_OK" = "Try Again";
+"INIT_LOGIN_FAIL_CANCEL" = "Exit";
+"INIT_LOGIN_ERROR" = "An error has occurred during the login process";
+"INIT_ACCOUNT_ERROR" = "An error has occurred in your account information lookup.";
+"INIT_GET_PUSH_ERROR" = "Push error occurred in your push information lookup.";
+"INIT_SET_PUSH_ERROR" = "Push error occurred during registration.";
+
+"BOOKMARK_TITLE" = "Favorite";
+"FAVORITE_EMPTY_MESSAGE" = "오른쪽 위 + 버튼을 선택하여 즐겨찾기를 추가해 주세요.";
+
+"CLOSE_BUTTON" = "Close";
+"CANCLE_BUTTON" = "Cancle";
+"CONFIRM_BUTTON" = "Confirm";
+
+"MENU_BUTTON" = "menu";

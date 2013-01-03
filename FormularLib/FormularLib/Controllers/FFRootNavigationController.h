@@ -1,0 +1,15 @@
+//
+//  FFRootNavigationController.h
+//  FormularLib
+//
+//  Created by 인식 조 on 12. 11. 9..
+//  Copyright (c) 2012년 장재휴. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface FFRootNavigationController : UINavigationController
+
+@property (nonatomic, strong) NSString *orientation;
+
+@end

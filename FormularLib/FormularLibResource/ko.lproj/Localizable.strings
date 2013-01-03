@@ -1,0 +1,48 @@
+/* 
+  Localizable.strings
+  FormularLib
+
+  Created by 인식 조 on 12. 11. 14..
+  Copyright (c) 2012년 장재휴. All rights reserved.
+*/
+"NOTIFICATION_TITLE" = "알림";
+
+"SETTING_HELP" = "도움말";
+"SETTING_APPNAME" = "프로그램명";
+"SETTING_APPVERSION" = "프로그램 버전";
+"SETTING_TITLE" = "설정";
+"SETTING_FRAMEWORK" = "프레임워크";
+"SETTING_LOCK" = "암호잠금";
+"SETTING_ON" = "켜짐";
+"SETTING_OFF" = "꺼짐";
+"SETTING_FAVORITE" = "즐겨찾기";
+"SETTING_CLEAR_CACHE" = "캐시 비우기";
+"SETTING_CLEAR_CACHE_COMPLETE" = "캐시를 삭제하였습니다.";
+
+"HELP_NAVIGATION_TITLE" = "도움말";
+
+"SHELL_CAMERA" = "카메라";
+"SHELL_PHOTOALBUM" = "포토앨범";
+"SHELL_LOGOUT" = "로그아웃";
+"SHELL_LOGOUT_MESSAGE" = "로그아웃 하시겠습니까?";
+"SHELL_LOGOUT_ERROR" = "로그아웃 중 에러가 발생하였습니다.";
+"SHELL_PHOTO_SAVE" = "사진이 저장되었습니다.";
+"SHELL_PHOTO_SAVE_ERROR" = "사진 저장 중 에러가 발생하였습니다.";
+"SHELL_EXIT_MESSAGE" = "프로그램을 종료하시겠습니까?";
+
+"INIT_CONFIGURATION_ERROR" = "설정 정보를 가져오던 중 에러가 발생하였습니다.";
+"INIT_LOGIN_FAIL_OK" = "재시도";
+"INIT_LOGIN_FAIL_CANCEL" = "종료";
+"INIT_LOGIN_ERROR" = "로그인 중 에러가 발생하였습니다.";
+"INIT_ACCOUNT_ERROR" = "계정정보 조회 중 에러가 발생하였습니다.";
+"INIT_GET_PUSH_ERROR" = "푸시 정보 조회 중 에러가 발생하였습니다.";
+"INIT_SET_PUSH_ERROR" = "푸시 정보 등록 중 에러가 발생하였습니다.";
+
+"BOOKMARK_TITLE" = "즐겨찾기";
+"FAVORITE_EMPTY_MESSAGE" = "오른쪽 위 + 버튼을 선택하여 즐겨찾기를 추가해 주세요.";
+
+"CLOSE_BUTTON" = "닫기";
+"CANCLE_BUTTON" = "취소";
+"CONFIRM_BUTTON" = "확인";
+
+"MENU_BUTTON" = "메뉴";

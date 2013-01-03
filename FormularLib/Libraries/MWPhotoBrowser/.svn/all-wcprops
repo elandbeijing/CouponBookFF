@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/Mobile_Framework/!svn/ver/498/trunk/ios/ELandMobileFramework/Libraries/MWPhotoBrowser
+END
+MWTapDetectingView.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/Mobile_Framework/!svn/ver/432/trunk/ios/ELandMobileFramework/Libraries/MWPhotoBrowser/MWTapDetectingView.h
+END
+MWCaptionView.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/Mobile_Framework/!svn/ver/432/trunk/ios/ELandMobileFramework/Libraries/MWPhotoBrowser/MWCaptionView.h
+END
+MWPhoto.h
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/Mobile_Framework/!svn/ver/432/trunk/ios/ELandMobileFramework/Libraries/MWPhotoBrowser/MWPhoto.h
+END
+MWTapDetectingImageView.h
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/Mobile_Framework/!svn/ver/432/trunk/ios/ELandMobileFramework/Libraries/MWPhotoBrowser/MWTapDetectingImageView.h
+END
+MWPhotoProtocol.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/Mobile_Framework/!svn/ver/432/trunk/ios/ELandMobileFramework/Libraries/MWPhotoBrowser/MWPhotoProtocol.h
+END
+MWTapDetectingView.m
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/Mobile_Framework/!svn/ver/432/trunk/ios/ELandMobileFramework/Libraries/MWPhotoBrowser/MWTapDetectingView.m
+END
+MWZoomingScrollView.h
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/Mobile_Framework/!svn/ver/432/trunk/ios/ELandMobileFramework/Libraries/MWPhotoBrowser/MWZoomingScrollView.h
+END
+MWCaptionView.m
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/Mobile_Framework/!svn/ver/432/trunk/ios/ELandMobileFramework/Libraries/MWPhotoBrowser/MWCaptionView.m
+END
+MWPhotoBrowser.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/Mobile_Framework/!svn/ver/432/trunk/ios/ELandMobileFramework/Libraries/MWPhotoBrowser/MWPhotoBrowser.h
+END
+MWPhoto.m
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/Mobile_Framework/!svn/ver/432/trunk/ios/ELandMobileFramework/Libraries/MWPhotoBrowser/MWPhoto.m
+END
+MWTapDetectingImageView.m
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/Mobile_Framework/!svn/ver/432/trunk/ios/ELandMobileFramework/Libraries/MWPhotoBrowser/MWTapDetectingImageView.m
+END
+MWZoomingScrollView.m
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/Mobile_Framework/!svn/ver/432/trunk/ios/ELandMobileFramework/Libraries/MWPhotoBrowser/MWZoomingScrollView.m
+END
+MWPhotoBrowser.m
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/Mobile_Framework/!svn/ver/498/trunk/ios/ELandMobileFramework/Libraries/MWPhotoBrowser/MWPhotoBrowser.m
+END
