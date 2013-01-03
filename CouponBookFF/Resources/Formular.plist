@@ -11,7 +11,7 @@
 		<key>ViewType</key>
 		<string>web</string>
 		<key>URL</key>
-		<string>http://121.169.202.179:8001</string>
+		<string>http://10.202.101.43:86</string>
 		<key>Name</key>
 		<string>home</string>
 	</dict>
@@ -20,15 +20,15 @@
 	<key>UITheme</key>
 	<string>navyui</string>
 	<key>AccountManagerClassName</key>
-	<string>FFSimpleAccountManager</string>
+	<string>CBAccountManager</string>
 	<key>LoginManagerClassName</key>
-	<string>FFSimpleLoginManager</string>
+	<string>CBLoginManager</string>
 	<key>NotificationManagerClassName</key>
 	<string>FFSimpleNotificationManager</string>
 	<key>Domain</key>
 	<dict>
 		<key>DEV</key>
-		<string>23.22.41.151</string>
+		<string>121.169.202.179</string>
 		<key>QAS</key>
 		<string>ec2-175-41-233-173.ap-northeast-1.compute.amazonaws.com</string>
 		<key>PRD</key>
@@ -37,7 +37,7 @@
 	<key>Port</key>
 	<dict>
 		<key>DEV</key>
-		<integer>80</integer>
+		<integer>8008</integer>
 		<key>QAS</key>
 		<integer>3000</integer>
 		<key>PRD</key>

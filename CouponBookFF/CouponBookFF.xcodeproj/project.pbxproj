@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		8502538B1695476900ED49B6 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8502538A1695476900ED49B6 /* CoreMedia.framework */; };
+		850757DD16955E1200D8B6F9 /* CBAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 850757DA16955E1200D8B6F9 /* CBAccountManager.m */; };
+		850757DE16955E1200D8B6F9 /* CBLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 850757DC16955E1200D8B6F9 /* CBLoginManager.m */; };
+		850757E316955E3200D8B6F9 /* CBNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 850757E016955E3200D8B6F9 /* CBNetworkHelper.m */; };
+		850757E416955E3200D8B6F9 /* CBPropertyList.m in Sources */ = {isa = PBXBuildFile; fileRef = 850757E216955E3200D8B6F9 /* CBPropertyList.m */; };
+		850757E816955F1200D8B6F9 /* CBJSONResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 850757E716955F1200D8B6F9 /* CBJSONResult.m */; };
+		850757EB1695623200D8B6F9 /* CBNotificationMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 850757EA1695623200D8B6F9 /* CBNotificationMessage.m */; };
+		8507580E16956DF700D8B6F9 /* CB.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8507580D16956DF700D8B6F9 /* CB.plist */; };
 		85197C3416952506003C5395 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85197C3316952506003C5395 /* UIKit.framework */; };
 		85197C3616952506003C5395 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85197C3516952506003C5395 /* Foundation.framework */; };
 		85197C3816952506003C5395 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85197C3716952506003C5395 /* CoreGraphics.framework */; };
@@ -72,6 +79,19 @@
 
 /* Begin PBXFileReference section */
 		8502538A1695476900ED49B6 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		850757D916955E1200D8B6F9 /* CBAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBAccountManager.h; sourceTree = "<group>"; };
+		850757DA16955E1200D8B6F9 /* CBAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBAccountManager.m; sourceTree = "<group>"; };
+		850757DB16955E1200D8B6F9 /* CBLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBLoginManager.h; sourceTree = "<group>"; };
+		850757DC16955E1200D8B6F9 /* CBLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBLoginManager.m; sourceTree = "<group>"; };
+		850757DF16955E3200D8B6F9 /* CBNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBNetworkHelper.h; sourceTree = "<group>"; };
+		850757E016955E3200D8B6F9 /* CBNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBNetworkHelper.m; sourceTree = "<group>"; };
+		850757E116955E3200D8B6F9 /* CBPropertyList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBPropertyList.h; sourceTree = "<group>"; };
+		850757E216955E3200D8B6F9 /* CBPropertyList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBPropertyList.m; sourceTree = "<group>"; };
+		850757E616955F1200D8B6F9 /* CBJSONResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBJSONResult.h; sourceTree = "<group>"; };
+		850757E716955F1200D8B6F9 /* CBJSONResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBJSONResult.m; sourceTree = "<group>"; };
+		850757E91695623200D8B6F9 /* CBNotificationMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBNotificationMessage.h; sourceTree = "<group>"; };
+		850757EA1695623200D8B6F9 /* CBNotificationMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBNotificationMessage.m; sourceTree = "<group>"; };
+		8507580D16956DF700D8B6F9 /* CB.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CB.plist; sourceTree = "<group>"; };
 		85197C2F16952506003C5395 /* CouponBookFF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CouponBookFF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85197C3316952506003C5395 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		85197C3516952506003C5395 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -134,15 +154,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		850757D716955DDB00D8B6F9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				850757E91695623200D8B6F9 /* CBNotificationMessage.h */,
+				850757EA1695623200D8B6F9 /* CBNotificationMessage.m */,
+				850757E616955F1200D8B6F9 /* CBJSONResult.h */,
+				850757E716955F1200D8B6F9 /* CBJSONResult.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		850757D816955DE400D8B6F9 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				850757D916955E1200D8B6F9 /* CBAccountManager.h */,
+				850757DA16955E1200D8B6F9 /* CBAccountManager.m */,
+				850757DB16955E1200D8B6F9 /* CBLoginManager.h */,
+				850757DC16955E1200D8B6F9 /* CBLoginManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		85197C2416952506003C5395 = {
 			isa = PBXGroup;
 			children = (
 				85197E2D1695299F003C5395 /* FormularLibResource.bundle */,
-				85197E13169527F7003C5395 /* Resources */,
 				85197DCA169525DC003C5395 /* FormularLib.xcodeproj */,
 				85197C3916952506003C5395 /* CouponBookFF */,
 				85197C3216952506003C5395 /* Frameworks */,
 				85197C3016952506003C5395 /* Products */,
+				85197E13169527F7003C5395 /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -179,8 +221,14 @@
 		85197C3916952506003C5395 /* CouponBookFF */ = {
 			isa = PBXGroup;
 			children = (
+				850757D816955DE400D8B6F9 /* Managers */,
+				850757D716955DDB00D8B6F9 /* Models */,
 				85197C4216952506003C5395 /* CBAppDelegate.h */,
 				85197C4316952506003C5395 /* CBAppDelegate.m */,
+				850757DF16955E3200D8B6F9 /* CBNetworkHelper.h */,
+				850757E016955E3200D8B6F9 /* CBNetworkHelper.m */,
+				850757E116955E3200D8B6F9 /* CBPropertyList.h */,
+				850757E216955E3200D8B6F9 /* CBPropertyList.m */,
 				85197C3A16952506003C5395 /* Supporting Files */,
 			);
 			path = CouponBookFF;
@@ -213,6 +261,7 @@
 		85197E13169527F7003C5395 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8507580D16956DF700D8B6F9 /* CB.plist */,
 				85197E14169527F7003C5395 /* Cordova.plist */,
 				85197E15169527F7003C5395 /* Formular.plist */,
 				85197E16169527F7003C5395 /* framework.xcconfig */,
@@ -320,6 +369,7 @@
 				85197E1F169527F7003C5395 /* navymenu.bundle in Resources */,
 				85197E20169527F7003C5395 /* navyui.bundle in Resources */,
 				85197E21169527F7003C5395 /* purpleui.bundle in Resources */,
+				8507580E16956DF700D8B6F9 /* CB.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +382,12 @@
 			files = (
 				85197C4016952506003C5395 /* main.m in Sources */,
 				85197C4416952506003C5395 /* CBAppDelegate.m in Sources */,
+				850757DD16955E1200D8B6F9 /* CBAccountManager.m in Sources */,
+				850757DE16955E1200D8B6F9 /* CBLoginManager.m in Sources */,
+				850757E316955E3200D8B6F9 /* CBNetworkHelper.m in Sources */,
+				850757E416955E3200D8B6F9 /* CBPropertyList.m in Sources */,
+				850757E816955F1200D8B6F9 /* CBJSONResult.m in Sources */,
+				850757EB1695623200D8B6F9 /* CBNotificationMessage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

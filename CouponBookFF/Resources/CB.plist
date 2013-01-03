@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppId</key>
+	<string>com.eland.CouponBookii</string>
+	<key>AccountInfoRequestUrl</key>
+	<dict>
+		<key>PRD</key>
+		<string>http://121.169.202.179:8000/Account/getMenuList</string>
+		<key>QAS</key>
+		<string>http://121.169.202.179:8000/Account/getMenuList</string>
+		<key>DEV</key>
+		<string>http://121.169.202.179:8000/Account/getMenuList</string>
+	</dict>
+	<key>LoginUrl</key>
+	<string>App/Login</string>
+	<key>SetNotificationInfoUrl</key>
+	<dict>
+		<key>PRD</key>
+		<string>http://121.169.202.179:8000/PushInfo/SetDeviceToken</string>
+		<key>QAS</key>
+		<string>http://121.169.202.179:8000/PushInfo/SetDeviceToken</string>
+		<key>DEV</key>
+		<string>http://121.169.202.179:8000/PushInfo/SetDeviceToken</string>
+	</dict>
+	<key>NotificationInfoUrl</key>
+	<dict>
+		<key>PRD</key>
+		<string>http://ec2-175-41-233-173.ap-northeast-1.compute.amazonaws.com:3000</string>
+		<key>QAS</key>
+		<string>http://ec2-175-41-233-173.ap-northeast-1.compute.amazonaws.com:3000</string>
+		<key>DEV</key>
+		<string>http://121.169.202.179:8001/</string>
+	</dict>
+	<key>NotificationRedirectUrl</key>
+	<dict>
+		<key>PRD</key>
+		<string>http://121.169.202.179:8000/PushInfo/Redirect</string>
+		<key>QAS</key>
+		<string>http://121.169.202.179:8000/PushInfo/Redirect</string>
+		<key>DEV</key>
+		<string>http://121.169.202.179:8000/PushInfo/Redirect</string>
+	</dict>
+	<key>UseNotificationView</key>
+	<true/>
+</dict>
+</plist>
