@@ -57,11 +57,10 @@
     
     NSBundle *bundle = [NSBundle mainBundle];
     NSDictionary *info = [bundle infoDictionary];
-    
-    NSDictionary *param = [NSDictionary dictionaryWithObjectsAndKeys:@"00:26:E8:4E:76:34", @"deviceId",
-                           [[NSLocale preferredLanguages] objectAtIndex:0], @"locale",
-                           [info objectForKey:@"CFBundleIdentifier"], @"appId",
-                           nil];
+   //NSDictionary *param = [NSDictionary dictionaryWithObjectsAndKeys:[CBNetworkHelper macAddress], @"deviceId",
+    //                      nil];
+       NSDictionary *param = [NSDictionary dictionaryWithObjectsAndKeys:@"C8:AA:21:CD:B0:13", @"deviceId",
+                          nil];
     [request setHTTPBody:[[param urlEncodedString] dataUsingEncoding:NSUTF8StringEncoding]];
     
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON){

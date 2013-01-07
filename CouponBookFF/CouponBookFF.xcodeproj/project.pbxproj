@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85011F44169AAE1E006488B1 /* CBRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85011F42169AAE1E006488B1 /* CBRegisterViewController.m */; };
+		85011F45169AAE1E006488B1 /* CBRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85011F43169AAE1E006488B1 /* CBRegisterViewController.xib */; };
 		8502538B1695476900ED49B6 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8502538A1695476900ED49B6 /* CoreMedia.framework */; };
 		850757DD16955E1200D8B6F9 /* CBAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 850757DA16955E1200D8B6F9 /* CBAccountManager.m */; };
 		850757DE16955E1200D8B6F9 /* CBLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 850757DC16955E1200D8B6F9 /* CBLoginManager.m */; };
@@ -78,6 +80,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		85011F41169AAE1E006488B1 /* CBRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBRegisterViewController.h; sourceTree = "<group>"; };
+		85011F42169AAE1E006488B1 /* CBRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBRegisterViewController.m; sourceTree = "<group>"; };
+		85011F43169AAE1E006488B1 /* CBRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBRegisterViewController.xib; sourceTree = "<group>"; };
 		8502538A1695476900ED49B6 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		850757D916955E1200D8B6F9 /* CBAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBAccountManager.h; sourceTree = "<group>"; };
 		850757DA16955E1200D8B6F9 /* CBAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBAccountManager.m; sourceTree = "<group>"; };
@@ -230,6 +235,9 @@
 				850757E116955E3200D8B6F9 /* CBPropertyList.h */,
 				850757E216955E3200D8B6F9 /* CBPropertyList.m */,
 				85197C3A16952506003C5395 /* Supporting Files */,
+				85011F41169AAE1E006488B1 /* CBRegisterViewController.h */,
+				85011F42169AAE1E006488B1 /* CBRegisterViewController.m */,
+				85011F43169AAE1E006488B1 /* CBRegisterViewController.xib */,
 			);
 			path = CouponBookFF;
 			sourceTree = "<group>";
@@ -370,6 +378,7 @@
 				85197E20169527F7003C5395 /* navyui.bundle in Resources */,
 				85197E21169527F7003C5395 /* purpleui.bundle in Resources */,
 				8507580E16956DF700D8B6F9 /* CB.plist in Resources */,
+				85011F45169AAE1E006488B1 /* CBRegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +397,7 @@
 				850757E416955E3200D8B6F9 /* CBPropertyList.m in Sources */,
 				850757E816955F1200D8B6F9 /* CBJSONResult.m in Sources */,
 				850757EB1695623200D8B6F9 /* CBNotificationMessage.m in Sources */,
+				85011F44169AAE1E006488B1 /* CBRegisterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +432,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xinmiao xiao (S3HRQBX3SW)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -437,6 +447,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2FF1A8B4-FEE7-4764-B9D6-856913C80156";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -450,7 +461,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: xinmiao xiao (S3HRQBX3SW)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -458,6 +469,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2FF1A8B4-FEE7-4764-B9D6-856913C80156";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -470,6 +482,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CouponBookFF/CouponBookFF-Prefix.pch";
 				INFOPLIST_FILE = "CouponBookFF/CouponBookFF-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -482,6 +495,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CouponBookFF/CouponBookFF-Prefix.pch";
 				INFOPLIST_FILE = "CouponBookFF/CouponBookFF-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

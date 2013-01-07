@@ -11,10 +11,10 @@
 		<key>QAS</key>
 		<string>http://121.169.202.179:8000/Account/getMenuList</string>
 		<key>DEV</key>
-		<string>http://121.169.202.179:8000/Account/getMenuList</string>
+		<string>http://10.202.101.28:7001/Account/getMenuList</string>
 	</dict>
 	<key>LoginUrl</key>
-	<string>App/Login</string>
+	<string>Account/Login</string>
 	<key>SetNotificationInfoUrl</key>
 	<dict>
 		<key>PRD</key>

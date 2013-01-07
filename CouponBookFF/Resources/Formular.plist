@@ -28,7 +28,7 @@
 	<key>Domain</key>
 	<dict>
 		<key>DEV</key>
-		<string>121.169.202.179</string>
+		<string>10.202.101.28</string>
 		<key>QAS</key>
 		<string>ec2-175-41-233-173.ap-northeast-1.compute.amazonaws.com</string>
 		<key>PRD</key>
@@ -37,7 +37,7 @@
 	<key>Port</key>
 	<dict>
 		<key>DEV</key>
-		<integer>8008</integer>
+		<integer>7001</integer>
 		<key>QAS</key>
 		<integer>3000</integer>
 		<key>PRD</key>
