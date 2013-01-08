@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		85011F44169AAE1E006488B1 /* CBRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85011F42169AAE1E006488B1 /* CBRegisterViewController.m */; };
 		85011F45169AAE1E006488B1 /* CBRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85011F43169AAE1E006488B1 /* CBRegisterViewController.xib */; };
+		85011F6E169BB15D006488B1 /* FormularLibResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 85011F6D169BB15D006488B1 /* FormularLibResource.bundle */; };
 		8502538B1695476900ED49B6 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8502538A1695476900ED49B6 /* CoreMedia.framework */; };
 		850757DD16955E1200D8B6F9 /* CBAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 850757DA16955E1200D8B6F9 /* CBAccountManager.m */; };
 		850757DE16955E1200D8B6F9 /* CBLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 850757DC16955E1200D8B6F9 /* CBLoginManager.m */; };
@@ -44,7 +45,6 @@
 		85197E1F169527F7003C5395 /* navymenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 85197E18169527F7003C5395 /* navymenu.bundle */; };
 		85197E20169527F7003C5395 /* navyui.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 85197E19169527F7003C5395 /* navyui.bundle */; };
 		85197E21169527F7003C5395 /* purpleui.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 85197E1A169527F7003C5395 /* purpleui.bundle */; };
-		85197E2E1695299F003C5395 /* FormularLibResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 85197E2D1695299F003C5395 /* FormularLibResource.bundle */; };
 		85197E2F16952B44003C5395 /* libFormularLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85197DD8169525DD003C5395 /* libFormularLib.a */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +83,7 @@
 		85011F41169AAE1E006488B1 /* CBRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBRegisterViewController.h; sourceTree = "<group>"; };
 		85011F42169AAE1E006488B1 /* CBRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBRegisterViewController.m; sourceTree = "<group>"; };
 		85011F43169AAE1E006488B1 /* CBRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBRegisterViewController.xib; sourceTree = "<group>"; };
+		85011F6D169BB15D006488B1 /* FormularLibResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FormularLibResource.bundle; sourceTree = "<group>"; };
 		8502538A1695476900ED49B6 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		850757D916955E1200D8B6F9 /* CBAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBAccountManager.h; sourceTree = "<group>"; };
 		850757DA16955E1200D8B6F9 /* CBAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBAccountManager.m; sourceTree = "<group>"; };
@@ -129,7 +130,6 @@
 		85197E18169527F7003C5395 /* navymenu.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = navymenu.bundle; sourceTree = "<group>"; };
 		85197E19169527F7003C5395 /* navyui.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = navyui.bundle; sourceTree = "<group>"; };
 		85197E1A169527F7003C5395 /* purpleui.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = purpleui.bundle; sourceTree = "<group>"; };
-		85197E2D1695299F003C5395 /* FormularLibResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FormularLibResource.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,7 +184,7 @@
 		85197C2416952506003C5395 = {
 			isa = PBXGroup;
 			children = (
-				85197E2D1695299F003C5395 /* FormularLibResource.bundle */,
+				85011F6D169BB15D006488B1 /* FormularLibResource.bundle */,
 				85197DCA169525DC003C5395 /* FormularLib.xcodeproj */,
 				85197C3916952506003C5395 /* CouponBookFF */,
 				85197C3216952506003C5395 /* Frameworks */,
@@ -365,7 +365,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85197E2E1695299F003C5395 /* FormularLibResource.bundle in Resources */,
+				85011F6E169BB15D006488B1 /* FormularLibResource.bundle in Resources */,
 				85197C3E16952506003C5395 /* InfoPlist.strings in Resources */,
 				85197C4616952506003C5395 /* Default.png in Resources */,
 				85197C4816952506003C5395 /* Default@2x.png in Resources */,

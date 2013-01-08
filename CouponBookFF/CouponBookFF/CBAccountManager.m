@@ -150,8 +150,9 @@
         NSArray *sections = [Section sectionsInManagedObjectContext:context];
         for(Section *section in sections)
             [Section deleteSection:section inManagedObjectContext:context];
-        
-        
+                NSString *loginId=self.loginManager.loginId;
+        if([loginId isEqualToString: @"manager"]||[loginId isEqualToString: @"admin"]||[loginId isEqualToString: @"userId"])
+        {
         // save new menus
         NSArray *menuInfos = [[JSON objectForKey:@"MenuInfo"] objectForKey:@"Menus"];
         
@@ -169,54 +170,52 @@
                 menu.type = [[menuInfo valueForKey:@"MenuType"]intValue] == 1 ? MENUTYPE_NODE : MENUTYPE_FOLDER;
                 menu.url = [FFURLHelper getFullUrl:[menuInfo valueForKey:@"ViewUrl"]];
                 menu.badge = [[menuInfo valueForKey:@"count"] description];
+               // menu.viewType = [NSNumber numberWithInt:0];
 
                 menu.section = [Section sectionWithCode:[[menuInfo valueForKey:@"ParentSeq"] description] inManagedObjectContext:context];
             }
+            
+            
         }
-        
-        
-//        menu = [Menu menuWithCode:@"MAIN" inManagedObjectContext:context];
-//        menu.name = @"NativeView";
-//        menu.viewType = [NSNumber numberWithInt:FFNativeView];
-//        menu.url = @"FSMainViewController";
-//        menu.section = section;
-//        
-                //add section with 2 menu    add by xiaoxinmiao
-       // sections = [Section sectionsInManagedObjectContext:context];
-        //menu = [Menu menuWithCode:@"MAIN" inManagedObjectContext:context];
-        NSString *sectionCount=[NSString stringWithFormat:@"%d", sections.count+111];
-        Section *section = [Section sectionWithCode:sectionCount inManagedObjectContext:context];
-        section.name = @"User Register";
-        
-        Menu *menu = [Menu menuWithCode:sectionCount inManagedObjectContext:context];
-        menu.name = @"Register";
-        //menu.icon = [menuInfo valueForKey:@"Icon"];
-       // menu.type = [[menuInfo valueForKey:@"MenuType"]intValue] == 1 ? MENUTYPE_NODE : MENUTYPE_FOLDER;
-        //NSString *viewUrl=@"Shop/Register";
-        //menu.url = [FFURLHelper getFullUrl:viewUrl];
-        menu.viewType = [NSNumber numberWithInt:FFNativeView];
-        menu.url = @"CBRegisterViewController";
-        
+            //add section with 2 menu    add by xiaoxinmiao
+            // sections = [Section sectionsInManagedObjectContext:context];
+            //menu = [Menu menuWithCode:@"MAIN" inManagedObjectContext:context];
+            NSString *sectionCount=[NSString stringWithFormat:@"%d", sections.count+1];
+            Section *section = [Section sectionWithCode:sectionCount inManagedObjectContext:context];
+            section.name = @"User Register";
+            
+            Menu *menu = [Menu menuWithCode:sectionCount inManagedObjectContext:context];
+            menu.name = @"Register";;
+            menu.viewType = [NSNumber numberWithInt:FFNativeView];
+            menu.url = @"CBRegisterViewController";
+            menu.section = [Section sectionWithCode:sectionCount inManagedObjectContext:context];
+        }
+        else if(loginId ==@"guest")
+        {
+            //add section with 2 menu    add by xiaoxinmiao
+            // sections = [Section sectionsInManagedObjectContext:context];
+            //menu = [Menu menuWithCode:@"MAIN" inManagedObjectContext:context];
+            NSString *sectionCount=[NSString stringWithFormat:@"%d", sections.count+1];
+            Section *section = [Section sectionWithCode:sectionCount inManagedObjectContext:context];
+            section.name = @"User Register";
+            
+            Menu *menu = [Menu menuWithCode:sectionCount inManagedObjectContext:context];
+            menu.name = @"Register";;
+            menu.viewType = [NSNumber numberWithInt:FFNativeView];
+            menu.url = @"CBRegisterViewController";
+            menu.section = [Section sectionWithCode:sectionCount inManagedObjectContext:context];
 
+        }
 
-       // menu.badge = [[menuInfo valueForKey:@"count"] description];
-        menu.section = [Section sectionWithCode:sectionCount inManagedObjectContext:context];
-        
-//        id menuInfos = [menuInfo objectForKey:@"Menu"];
-//        for (id menuInfo in menuInfos) {
-//            Menu *menu = [Menu menuWithCode:[[menuInfo valueForKey:@"DisplaySeq"] description] inManagedObjectContext:context];
-//            menu.name = [menuInfo valueForKey:@"Name"];
-//            menu.icon = [menuInfo valueForKey:@"Icon"];
-//            menu.type = [[menuInfo valueForKey:@"MenuType"]intValue] == 1 ? MENUTYPE_NODE : MENUTYPE_FOLDER;
-//            menu.url = [FFURLHelper getFullUrl:[self getURL:[menuInfo valueForKey:@"ViewUrl"]]];
-//            menu.badge = [[menuInfo valueForKey:@"count"] description];
-//            menu.section = [Section sectionWithCode:[[menuInfo valueForKey:@"ParentSeq"] description] inManagedObjectContext:context];
-//        }
+          
+
 
         [self setMenuSections:[NSOrderedSet orderedSetWithArray:[Section sectionsInManagedObjectContext:context]]];
         success();
     }];
 }
+
+
 
 -(NSString *)getURL:(NSString *)urlString
 {
