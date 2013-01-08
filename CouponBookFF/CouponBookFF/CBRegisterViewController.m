@@ -47,21 +47,18 @@
 }
 - (IBAction)register:(id)sender {
     
+
+    
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[FFURLHelper getFullUrl:@"Account/RegisterUser"]]];
     [request setHTTPMethod:@"POST"];
     
     NSBundle *bundle = [NSBundle mainBundle];
     NSDictionary *info = [bundle infoDictionary];
-    //    NSDictionary *param = [NSDictionary dictionaryWithObjectsAndKeys:
-    //                           [self txtName],@"userID",
-    //                           [self txtPassword],@"password",
-    //                           [CBNetworkHelper macAddress], @"deviceId",
-    //                          nil];
     
     NSDictionary *param = [NSDictionary dictionaryWithObjectsAndKeys:
-                           [self txtName],@"userID",
-                           [self txtPassword],@"password",
-                          [self txtPassword],@"userName",
+                           [self txtName].text,@"userID",
+                           [self txtPassword].text,@"password",
+                          [self txtPassword].text,@"userName",
                           nil];
     
     
@@ -77,7 +74,8 @@
             if([json.result isEqualToString:@"success"]) {
                 //save success
                 CBDeviceRegViewController *deviceController=[[CBDeviceRegViewController alloc] initWithNibName:@"CBDeviceRegViewController" bundle:nil];
-                [self presentModalViewController:deviceController animated:YES];
+                [[self navigationController] presentModalViewController:deviceController animated:YES];
+                [[self navigationController]setNavigationBarHidden:NO];
             } else if([json.result isEqualToString:@"failure"]) {
                 [details setValue:json.msg
                            forKey:NSLocalizedDescriptionKey];
@@ -112,5 +110,10 @@
     [operation start];
     
     
+}
+- (IBAction)leaveFocus:(id)sender {
+    [[self txtName] resignFirstResponder ];
+    [[self txtNickName] resignFirstResponder ];
+    [[self txtPassword] resignFirstResponder ];
 }
 @end

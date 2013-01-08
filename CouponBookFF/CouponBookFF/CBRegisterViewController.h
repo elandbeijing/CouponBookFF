@@ -14,5 +14,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *txtName;
 @property (weak, nonatomic) IBOutlet UITextField *txtNickName;
 @property (weak, nonatomic) IBOutlet UITextField *txtPassword;
+- (IBAction)leaveFocus:(id)sender;
 
 @end

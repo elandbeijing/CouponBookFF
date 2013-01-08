@@ -16,6 +16,7 @@
 @interface CBLoginManager ()
 @property (nonatomic, readonly) FFEnvironmentInformationManager *environmentInformationManager;
 @property (nonatomic, readonly) id<FFNotificationManagerProtocol> notificationManager;
+
 @end
 
 @implementation CBLoginManager
@@ -24,6 +25,7 @@
 @synthesize environmentInformationManager = _environmentInformationManager;
 @synthesize notificationManager = _notificationManager;
 @synthesize loginId = _loginId;
+@synthesize msg=_msg;
 
 -(FFEnvironmentInformationManager *)environmentInformationManager
 {
@@ -49,6 +51,8 @@
     _loginId = loginId;
 }
 
+
+
 -(void)login:(void (^)())success failure:(void (^)(NSError *))failure
 {
     
@@ -57,10 +61,10 @@
     
     NSBundle *bundle = [NSBundle mainBundle];
     NSDictionary *info = [bundle infoDictionary];
-   //NSDictionary *param = [NSDictionary dictionaryWithObjectsAndKeys:[CBNetworkHelper macAddress], @"deviceId",
-    //                      nil];
-       NSDictionary *param = [NSDictionary dictionaryWithObjectsAndKeys:@"C8:AA:21:CD:B0:13", @"deviceId",
+   NSDictionary *param = [NSDictionary dictionaryWithObjectsAndKeys:[CBNetworkHelper macAddress], @"deviceId",
                           nil];
+//       NSDictionary *param = [NSDictionary dictionaryWithObjectsAndKeys:@"C:AA:21:CD:B0:13", @"deviceId",
+//                          nil];
     [request setHTTPBody:[[param urlEncodedString] dataUsingEncoding:NSUTF8StringEncoding]];
     
     AFJSONRequestOperation *operation = [AFJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id JSON){
@@ -71,6 +75,7 @@
             if([json.result isEqualToString:@"success"]) {
                 self.loginId = [json.data valueForKey:@"loginId"];
                 self.notificationManager.userId = [json.data valueForKey:@"loginId"];
+                self.msg=json.msg;
                 success();
             } else if([json.result isEqualToString:@"failure"]) {
                 [details setValue:json.msg

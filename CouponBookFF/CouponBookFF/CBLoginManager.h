@@ -10,5 +10,6 @@
 #import <FormularLib/FormularLib.h>
 
 @interface CBLoginManager : FFBaseLoginManager
+@property (nonatomic,strong) NSString *msg;
 
 @end
