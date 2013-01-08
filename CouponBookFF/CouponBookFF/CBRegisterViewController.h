@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FormularLib/FormularLib.h>
 
 @interface CBRegisterViewController : UIViewController
 - (IBAction)register:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *txtName;
+@property (weak, nonatomic) IBOutlet UITextField *txtNickName;
+@property (weak, nonatomic) IBOutlet UITextField *txtPassword;
 
 @end
