@@ -28,6 +28,8 @@
 	</array>
 	<key>Plugins</key>
 	<dict>
+		<key>MacAdddressPlugin</key>
+		<string>FFMacAddressPlugin</string>
 		<key>WebViewPlugin</key>
 		<string>FFWebViewPlugin</string>
 		<key>UIControl</key>

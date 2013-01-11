@@ -12,10 +12,10 @@
 		85011F6E169BB15D006488B1 /* FormularLibResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 85011F6D169BB15D006488B1 /* FormularLibResource.bundle */; };
 		85011F73169BB3CF006488B1 /* CBDeviceRegViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85011F71169BB3CF006488B1 /* CBDeviceRegViewController.m */; };
 		85011F74169BB3CF006488B1 /* CBDeviceRegViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85011F72169BB3CF006488B1 /* CBDeviceRegViewController.xib */; };
+		85011FDE169D0708006488B1 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 85011FDD169D0708006488B1 /* www */; };
 		8502538B1695476900ED49B6 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8502538A1695476900ED49B6 /* CoreMedia.framework */; };
 		850757DD16955E1200D8B6F9 /* CBAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 850757DA16955E1200D8B6F9 /* CBAccountManager.m */; };
 		850757DE16955E1200D8B6F9 /* CBLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 850757DC16955E1200D8B6F9 /* CBLoginManager.m */; };
-		850757E316955E3200D8B6F9 /* CBNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 850757E016955E3200D8B6F9 /* CBNetworkHelper.m */; };
 		850757E416955E3200D8B6F9 /* CBPropertyList.m in Sources */ = {isa = PBXBuildFile; fileRef = 850757E216955E3200D8B6F9 /* CBPropertyList.m */; };
 		850757E816955F1200D8B6F9 /* CBJSONResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 850757E716955F1200D8B6F9 /* CBJSONResult.m */; };
 		850757EB1695623200D8B6F9 /* CBNotificationMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 850757EA1695623200D8B6F9 /* CBNotificationMessage.m */; };
@@ -89,13 +89,14 @@
 		85011F70169BB3CF006488B1 /* CBDeviceRegViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBDeviceRegViewController.h; sourceTree = "<group>"; };
 		85011F71169BB3CF006488B1 /* CBDeviceRegViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBDeviceRegViewController.m; sourceTree = "<group>"; };
 		85011F72169BB3CF006488B1 /* CBDeviceRegViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CBDeviceRegViewController.xib; sourceTree = "<group>"; };
+		85011FB9169D0461006488B1 /* CBNetworkHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBNetworkHelper.h; sourceTree = "<group>"; };
+		85011FBA169D0461006488B1 /* CBNetworkHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CBNetworkHelper.m; sourceTree = "<group>"; };
+		85011FDD169D0708006488B1 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		8502538A1695476900ED49B6 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		850757D916955E1200D8B6F9 /* CBAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBAccountManager.h; sourceTree = "<group>"; };
 		850757DA16955E1200D8B6F9 /* CBAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBAccountManager.m; sourceTree = "<group>"; };
 		850757DB16955E1200D8B6F9 /* CBLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBLoginManager.h; sourceTree = "<group>"; };
 		850757DC16955E1200D8B6F9 /* CBLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBLoginManager.m; sourceTree = "<group>"; };
-		850757DF16955E3200D8B6F9 /* CBNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBNetworkHelper.h; sourceTree = "<group>"; };
-		850757E016955E3200D8B6F9 /* CBNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBNetworkHelper.m; sourceTree = "<group>"; };
 		850757E116955E3200D8B6F9 /* CBPropertyList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBPropertyList.h; sourceTree = "<group>"; };
 		850757E216955E3200D8B6F9 /* CBPropertyList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBPropertyList.m; sourceTree = "<group>"; };
 		850757E616955F1200D8B6F9 /* CBJSONResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBJSONResult.h; sourceTree = "<group>"; };
@@ -180,6 +181,8 @@
 		850757D716955DDB00D8B6F9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				85011FB9169D0461006488B1 /* CBNetworkHelper.h */,
+				85011FBA169D0461006488B1 /* CBNetworkHelper.m */,
 				850757E91695623200D8B6F9 /* CBNotificationMessage.h */,
 				850757EA1695623200D8B6F9 /* CBNotificationMessage.m */,
 				850757E616955F1200D8B6F9 /* CBJSONResult.h */,
@@ -202,6 +205,7 @@
 		85197C2416952506003C5395 = {
 			isa = PBXGroup;
 			children = (
+				85011FDD169D0708006488B1 /* www */,
 				85011F6D169BB15D006488B1 /* FormularLibResource.bundle */,
 				85197DCA169525DC003C5395 /* FormularLib.xcodeproj */,
 				85197C3916952506003C5395 /* CouponBookFF */,
@@ -249,8 +253,6 @@
 				850757D716955DDB00D8B6F9 /* Models */,
 				85197C4216952506003C5395 /* CBAppDelegate.h */,
 				85197C4316952506003C5395 /* CBAppDelegate.m */,
-				850757DF16955E3200D8B6F9 /* CBNetworkHelper.h */,
-				850757E016955E3200D8B6F9 /* CBNetworkHelper.m */,
 				850757E216955E3200D8B6F9 /* CBPropertyList.m */,
 				850757E116955E3200D8B6F9 /* CBPropertyList.h */,
 				85197C3A16952506003C5395 /* Supporting Files */,
@@ -396,6 +398,7 @@
 				8507580E16956DF700D8B6F9 /* CB.plist in Resources */,
 				85011F45169AAE1E006488B1 /* CBRegisterViewController.xib in Resources */,
 				85011F74169BB3CF006488B1 /* CBDeviceRegViewController.xib in Resources */,
+				85011FDE169D0708006488B1 /* www in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,7 +413,6 @@
 				85197C4416952506003C5395 /* CBAppDelegate.m in Sources */,
 				850757DD16955E1200D8B6F9 /* CBAccountManager.m in Sources */,
 				850757DE16955E1200D8B6F9 /* CBLoginManager.m in Sources */,
-				850757E316955E3200D8B6F9 /* CBNetworkHelper.m in Sources */,
 				850757E416955E3200D8B6F9 /* CBPropertyList.m in Sources */,
 				850757E816955F1200D8B6F9 /* CBJSONResult.m in Sources */,
 				850757EB1695623200D8B6F9 /* CBNotificationMessage.m in Sources */,

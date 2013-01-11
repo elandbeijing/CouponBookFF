@@ -178,49 +178,38 @@
             
             
         }
-            //add section with 2 menu    add by xiaoxinmiao
-            // sections = [Section sectionsInManagedObjectContext:context];
-            //menu = [Menu menuWithCode:@"MAIN" inManagedObjectContext:context];
-            NSString *sectionCount=[NSString stringWithFormat:@"%d", sections.count+1];
-            Section *section = [Section sectionWithCode:sectionCount inManagedObjectContext:context];
-            section.name = @"User Register";
-            
-            Menu *menu = [Menu menuWithCode:sectionCount inManagedObjectContext:context];
-            menu.name = @"Register";;
-            menu.viewType = [NSNumber numberWithInt:FFNativeView];
-            menu.url = @"CBRegisterViewController";
-            menu.section = [Section sectionWithCode:sectionCount inManagedObjectContext:context];
+
+
         }
-        else if([loginId isEqualToString: @"guest"])
+        //guest  add section with 2 menu    add by xiaoxinmiao
+        NSString *sectionCount=[NSString stringWithFormat:@"%d", sections.count+1];
+        Section *section = [Section sectionWithCode:sectionCount inManagedObjectContext:context];
+        section.name = @"User Register";
+        
+        Menu *menu = [Menu menuWithCode:sectionCount inManagedObjectContext:context];
+        menu.name = @"Register";;
+        menu.viewType = [NSNumber numberWithInt:FFNativeView];
+        menu.section = [Section sectionWithCode:sectionCount inManagedObjectContext:context];
+        
+        NSString *msg=self.loginManager.msg;
+        if([msg isEqualToString:@"unregister" ])
         {
-            //add section with 2 menu    add by xiaoxinmiao
-            // sections = [Section sectionsInManagedObjectContext:context];
-            //menu = [Menu menuWithCode:@"MAIN" inManagedObjectContext:context];
-            NSString *sectionCount=[NSString stringWithFormat:@"%d", sections.count+1];
-            Section *section = [Section sectionWithCode:sectionCount inManagedObjectContext:context];
-            section.name = @"User Register";
-            
-            Menu *menu = [Menu menuWithCode:sectionCount inManagedObjectContext:context];
-            menu.name = @"Register";;
-            menu.viewType = [NSNumber numberWithInt:FFNativeView];
-//            menu.url = @"CBRegisterViewController";
-            menu.section = [Section sectionWithCode:sectionCount inManagedObjectContext:context];
-            
-            NSString *msg=self.loginManager.msg;
-            if([msg isEqualToString:@"unregister" ])
-            {
-                menu.url = @"CBRegisterViewController";
-            }
-            else
-            {
-                menu.url = @"CBDeviceRegViewController";
-            }
-            
-
-
+            menu.url = @"CBRegisterViewController";
         }
+        else
+        {
+            menu.url = @"CBDeviceRegViewController";
+        }
+//        else if([loginId isEqualToString: @"guest"])
+//        {
+//
+//
+//
+//        }
+        
 
-          
+
+        
 
 
         [self setMenuSections:[NSOrderedSet orderedSetWithArray:[Section sectionsInManagedObjectContext:context]]];

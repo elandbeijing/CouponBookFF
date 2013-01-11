@@ -58,7 +58,7 @@
     NSDictionary *param = [NSDictionary dictionaryWithObjectsAndKeys:
                            [self txtName].text,@"userID",
                            [self txtPassword].text,@"password",
-                          [self txtPassword].text,@"userName",
+                          [self txtNickName].text,@"userName",
                           nil];
     
     

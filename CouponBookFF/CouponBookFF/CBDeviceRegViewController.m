@@ -38,16 +38,18 @@
     // Do any additional setup after loading the view from its nib.
 }
 
--changePage
+-(void)changePage
 {
-    [self dismissModalViewControllerAnimated:YES];
+   [self dismissModalViewControllerAnimated:YES];
+    
+                   // [[self navigationController] dis :YES];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
+} 
 
 - (IBAction)register:(id)sender {
     
@@ -63,10 +65,7 @@
                                [self txtPassword].text,@"password",
                                [CBNetworkHelper macAddress], @"deviceId",
                               nil];
-    //[CBNetworkHelper macAddress]
-    NSString *aa=[CBNetworkHelper macAddress];
-    
-    NSLog(@"%@",aa);
+
     
     //    NSDictionary *param = [NSDictionary dictionaryWithObjectsAndKeys:@"C8:AA:21:CD:B0:13", @"deviceId",
     //                           nil];

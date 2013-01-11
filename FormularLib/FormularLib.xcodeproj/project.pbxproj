@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		067BE785169C08E4001F1AD0 /* FFMacAddressPlugin.h in Headers */ = {isa = PBXBuildFile; fileRef = 067BE783169C08E4001F1AD0 /* FFMacAddressPlugin.h */; };
+		067BE786169C08E4001F1AD0 /* FFMacAddressPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 067BE784169C08E4001F1AD0 /* FFMacAddressPlugin.m */; };
+		067BE78A169C0B3F001F1AD0 /* CBNetworkHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 067BE788169C0B3F001F1AD0 /* CBNetworkHelper.h */; };
+		067BE78B169C0B3F001F1AD0 /* CBNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 067BE789169C0B3F001F1AD0 /* CBNetworkHelper.m */; };
 		780EF32F165A206D008F89BB /* AFHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 780EF31C165A206D008F89BB /* AFHTTPClient.h */; };
 		780EF330165A206D008F89BB /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 780EF31D165A206D008F89BB /* AFHTTPClient.m */; };
 		780EF331165A206D008F89BB /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 780EF31E165A206D008F89BB /* AFHTTPRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -212,6 +216,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		067BE783169C08E4001F1AD0 /* FFMacAddressPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFMacAddressPlugin.h; sourceTree = "<group>"; };
+		067BE784169C08E4001F1AD0 /* FFMacAddressPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFMacAddressPlugin.m; sourceTree = "<group>"; };
+		067BE788169C0B3F001F1AD0 /* CBNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBNetworkHelper.h; sourceTree = "<group>"; };
+		067BE789169C0B3F001F1AD0 /* CBNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBNetworkHelper.m; sourceTree = "<group>"; };
 		780EF31C165A206D008F89BB /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		780EF31D165A206D008F89BB /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
 		780EF31E165A206D008F89BB /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -611,6 +619,8 @@
 		7823275E164A3E1A00E7C82B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				067BE788169C0B3F001F1AD0 /* CBNetworkHelper.h */,
+				067BE789169C0B3F001F1AD0 /* CBNetworkHelper.m */,
 				78677BE8165430CB001EAC4A /* NSDictionary+UrlEncoding.h */,
 				78677BE9165430CB001EAC4A /* NSDictionary+UrlEncoding.m */,
 				7823275F164A3E1A00E7C82B /* FFCoreDataHelper.h */,
@@ -714,6 +724,8 @@
 				7876B7A616520B130054C01A /* FFWebViewPlugin.m */,
 				DDE2AE2A1653537200F06FDF /* FFShellPlugin.h */,
 				DDE2AE2B1653537200F06FDF /* FFShellPlugin.m */,
+				067BE783169C08E4001F1AD0 /* FFMacAddressPlugin.h */,
+				067BE784169C08E4001F1AD0 /* FFMacAddressPlugin.m */,
 			);
 			path = Plugins;
 			sourceTree = "<group>";
@@ -1021,6 +1033,8 @@
 				78D4F6551665985C00C19BB1 /* FFMenuDataSource.h in Headers */,
 				DDAA6CD0166C36DF00C9EBE6 /* FFSettingDebugTableViewController.h in Headers */,
 				DDC10CC01679B62D00033AB3 /* FFCustomViewController.h in Headers */,
+				067BE785169C08E4001F1AD0 /* FFMacAddressPlugin.h in Headers */,
+				067BE78A169C0B3F001F1AD0 /* CBNetworkHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1242,6 +1256,8 @@
 				78982C3B16762E5F00C53407 /* Section.m in Sources */,
 				DDC10CC11679B62D00033AB3 /* FFCustomViewController.m in Sources */,
 				7866D49A167B313600F4F3C6 /* UIViewController+CurrentViewController.m in Sources */,
+				067BE786169C08E4001F1AD0 /* FFMacAddressPlugin.m in Sources */,
+				067BE78B169C0B3F001F1AD0 /* CBNetworkHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

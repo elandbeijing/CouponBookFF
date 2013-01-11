@@ -9,9 +9,9 @@
 	<key>HomePage</key>
 	<dict>
 		<key>ViewType</key>
-		<string>web</string>
+		<string>local</string>
 		<key>URL</key>
-		<string>http://10.202.101.43:86</string>
+		<string>index.html</string>
 		<key>Name</key>
 		<string>home</string>
 	</dict>
