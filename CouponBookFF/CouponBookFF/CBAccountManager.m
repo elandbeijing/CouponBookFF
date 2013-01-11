@@ -10,11 +10,12 @@
 #import "CBPropertyList.h"
 #import "CBJSONResult.h"
 #import <Cordova/JSONKit.h>
+#import "CBLoginManager.h"
 
 
 @interface CBAccountManager()
 @property (nonatomic, readonly) FFEnvironmentInformationManager *environmentInformationManager;
-@property (nonatomic, readonly) id<FFLoginManagerProtocol> loginManager;
+@property (nonatomic, readonly) CBLoginManager *loginManager;
 @property (nonatomic, strong) NSString *currentMenuVersion;
 @property (nonatomic, strong) NSString *email;
 @property (nonatomic, strong) NSString *name;
@@ -38,7 +39,7 @@
     return _environmentInformationManager;
 }
 
--(id<FFLoginManagerProtocol>)loginManager
+-(CBLoginManager*)loginManager
 {
     if(!_loginManager)
         _loginManager = [NSClassFromString(self.environmentInformationManager.loginManagerClassName) loginManager];
@@ -190,7 +191,7 @@
             menu.url = @"CBRegisterViewController";
             menu.section = [Section sectionWithCode:sectionCount inManagedObjectContext:context];
         }
-        else if(loginId ==@"guest")
+        else if([loginId isEqualToString: @"guest"])
         {
             //add section with 2 menu    add by xiaoxinmiao
             // sections = [Section sectionsInManagedObjectContext:context];
@@ -202,8 +203,20 @@
             Menu *menu = [Menu menuWithCode:sectionCount inManagedObjectContext:context];
             menu.name = @"Register";;
             menu.viewType = [NSNumber numberWithInt:FFNativeView];
-            menu.url = @"CBRegisterViewController";
+//            menu.url = @"CBRegisterViewController";
             menu.section = [Section sectionWithCode:sectionCount inManagedObjectContext:context];
+            
+            NSString *msg=self.loginManager.msg;
+            if([msg isEqualToString:@"unregister" ])
+            {
+                menu.url = @"CBRegisterViewController";
+            }
+            else
+            {
+                menu.url = @"CBDeviceRegViewController";
+            }
+            
+
 
         }
 
@@ -214,6 +227,8 @@
         success();
     }];
 }
+
+
 
 
 

@@ -6,9 +6,14 @@
 //  Copyright (c) 2013년 ElandApple02. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+
+#import <FormularLib/FormularLib.h>
 
 @interface CBDeviceRegViewController : UIViewController
 - (IBAction)register:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UITextField *txtName;
+@property (weak, nonatomic) IBOutlet UITextField *txtPassword;
+
+- (IBAction)leavefocus:(id)sender;
 @end
