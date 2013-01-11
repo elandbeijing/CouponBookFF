@@ -298,8 +298,12 @@
   					<p>Provides access to the devices storage options.</p>
 				</blockquote>
 				<h4 class="help">Based on <b>W3C Web SQL Database Spec</b> and <b>W3C Web Storage API Spec</b></h4>							
+
                 <a class="btn" onclick="var params = { 'script': 'alert' };
                     cordova.exec(null, null, 'MacAdddressPlugin', 'getMacAddress', [JSON.stringify(params)]);">Create DB</a>
+
+					<a class="btn" onclick="createDB();">Create DB</a>
+
 					<a class="btn" onclick="getSqlResultSet();">SQL Result Set</a>
 				<div class="result-block">
 					SQL Result: <br/><span id="sql-result"></span><br/>
